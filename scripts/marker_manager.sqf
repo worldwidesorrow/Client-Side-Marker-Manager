@@ -25,9 +25,21 @@
 fnc_localizeMarkerText = {
 	local _text = _this;
 		{
-			if (typeName _x == "STRING") then { 
-				if (["STR_",_x] call fnc_inString) then {
-					_text set [_forEachIndex, localize _x];
+			local _index = _forEachIndex;
+			if (typeName _x == "ARRAY") then {
+				{
+					if (typeName _x == "STRING") then {
+						if (["STR_",_x] call fnc_inString) then {
+							(_text select _index) set [_forEachIndex, localize _x];
+						};
+					};
+				} forEach _x;
+				_text set [_index, format _x];
+			} else {
+				if (typeName _x == "STRING") then {
+					if (["STR_",_x] call fnc_inString) then {
+						_text set [_index, localize _x];
+					};
 				};
 			};
 		} forEach _text;
