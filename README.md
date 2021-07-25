@@ -38,10 +38,11 @@ It will greatly reduce the network traffic associated with map markers that trad
 	if (isServer) then {
 	```
 	
-	Add the following line ***below*** it:
+	Add the following lines ***below*** it:
 	
 	```sqf
 	DZE_ServerMarkerArray = [];
+	DZE_MissionPositions = [];
 	```
 
 	Find this line:
