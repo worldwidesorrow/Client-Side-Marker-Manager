@@ -10,8 +10,6 @@ It will greatly reduce the network traffic associated with map markers that trad
 
 1. ***[Download](https://github.com/worldwidesorrow/Client-Side-Marker-Manager/archive/main.zip)*** or click the green button on the right side of the Github page.
 
-	> Recommended PBO tool for all "pack", "repack", or "unpack" steps: ***[PBO Manager](http://www.armaholic.com/page.php?id=16369)***
-
 2. Extract the downloaded folder to your desktop and open it
 3. Go to your server pbo and unpack it.
 4. Navigate to directory ***dayz_server\compile*** and edit file <code>server_playerLogin.sqf</code>.
